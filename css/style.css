@@ -81,14 +81,14 @@ img{
 	margin-bottom: var(--mb-3);
 }
 
-.bd-container{
+.container{
 	max-width: 968px;
 	width: calc(100% - 3rem);
 	margin-left: var(--mb-3);
 	margin-right: var(--mb-3);
 }
 
-.bg-grid{
+.grid{
 	display: grid;
 	gap: 1.5rem;
 }
@@ -298,4 +298,23 @@ img{
 
 .education__year{
 	font-size: var(--smaller-font-size);
+}
+
+.skills__content{
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.skills__name{
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--mb-3);
+}
+
+.skills__circle{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: var(--text-color);
+	border-radius: 50%;
+	margin-right: .75rem;
 }
