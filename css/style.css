@@ -257,6 +257,11 @@ img{
 	text-align: center;
 }
 
+.education__container{
+	grid-template-columns: 20px auto;
+	padding-bottom: 1rem;
+}
+
 .education__content{
 	display: flex;
 }
@@ -278,7 +283,7 @@ img{
 .education__line{
 	display: block;
 	width: 2px;
-	height: 110%;
+	height: 100%;
 	background-color: var(--text-color-light);
 	transform: translate(7px, 0);
 }
