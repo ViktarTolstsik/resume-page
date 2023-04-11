@@ -408,4 +408,26 @@ img{
 	.resume__left, .resume__right{
 		padding: 0 1.5rem;
 	}
+
+	.section-title, .profile__description{
+		text-align: initial;
+	}
+
+	.home__container{
+		gap: 1.5rem;
+	}
+
+	.home__button-movil{
+		display: none;
+	}
+
+	.languages__content{
+		grid-template-columns: repeat(3, max-content);
+		column-gap: 3.5rem;
+	}
+
+	.interests__container{
+		grid-template-columns: repeat(4, max-content);
+		column-gap: 3.5rem;
+	}
 }
