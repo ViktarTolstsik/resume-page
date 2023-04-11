@@ -69,7 +69,7 @@ let resumeButton = document.getElementById('resume-button')
 
 //Html2Pdf options
 let opt = {
-	margin: -3,
+	margin: -3.5,
 	filename: 'myResume.pdf',
 	image: { type: 'jpeg', quality: 1 },
 	html2canvas: { scale: 4 },
