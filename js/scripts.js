@@ -52,3 +52,39 @@ function scrollTop() {
 }
 
 window.addEventListener('scroll', scrollTop)
+
+function scaleCv() {
+	document.body.classList.add('scale-cv')
+}
+
+function removeScale() {
+	document.body.classList.remove('scale-cv')
+}
+
+
+/*GENERATE PDF AREA */
+let areaCv = document.getElementById('area-cv')
+
+let resumeButton = document.getElementById('resume-button')
+
+//Html2Pdf options
+let opt = {
+	margin: -3,
+	filename: 'myResume.pdf',
+	image: { type: 'jpeg', quality: 1 },
+	html2canvas: { scale: 4 },
+	jsPDF: { format: 'a4', orientation: 'portrait' }
+}
+
+function generateResume() {
+	html2pdf(areaCv, opt)
+}
+
+resumeButton.addEventListener('click', () => {
+
+	scaleCv()
+
+	generateResume()
+
+	setTimeout(removeScale, 5000)
+})
