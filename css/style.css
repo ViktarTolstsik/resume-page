@@ -299,6 +299,7 @@ img{
 	border-radius: 50%;
 	justify-self: center;
 	margin-bottom: var(--mb-1);
+	border: 3px solid var(--text-color-light);
 }
 
 .home__title{
