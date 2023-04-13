@@ -330,6 +330,7 @@ img{
 .home__icon{
 	font-size: 1.2rem;
 	margin-right: .25rem;
+	color: var(--title-color);
 }
 
 .home__button-movil{
@@ -367,6 +368,7 @@ img{
 .social__icon{
 	font-size: 1.2rem;
 	margin-right: .25rem;
+	color: var(--title-color);
 }
 
 .profile__description{
