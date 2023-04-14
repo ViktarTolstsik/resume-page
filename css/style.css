@@ -7,7 +7,7 @@
 	--text-color-light: #0e71cd;
 	--container-color: #ffffff;
 	--container-color-alt: #383838;
-	--body-color: #f0ffff;
+	--body-color: #ffffff;
 
 	--body-font: 'Century Gothic', sans-serif;
 	--h1-font-size: 1.5rem;
@@ -417,6 +417,11 @@ img{
 	color: var(--text-color-alt);
 }
 
+.experience__data li{
+	color: var(--text-color-alt);
+	font-style: italic;
+}
+
 .education__data{
 	gap: .5rem;
 }
@@ -439,6 +444,22 @@ img{
 	font-size: var(--smaller-font-size);
 }
 
+.projects__container{
+ 	gap: 1rem;
+}
+
+.project__description{
+	color: var(--text-color-alt);
+}
+
+.project__technologies{
+	color: var(--text-color-light);
+}
+
+.projects__link{
+	color: var(--text-color-light);
+}
+
 .skills__content, .languages__content{
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -449,7 +470,7 @@ img{
 	margin-bottom: var(--mb-3);
 }
 
-.skills__circle, .languages__circle{
+.skills__circle, .languages__circle, .experience__circle{
 	display: inline-block;
 	width: 5px;
 	height: 5px;
@@ -458,10 +479,10 @@ img{
 }
 
 .skills__circle{
-	background-color: var(--text-color);
+	background-color: var(--title-color);
 }
 
-.languages__circle{
+.languages__circle, .experience__circle{
 	background-color: var(--title-color);
 }
 
@@ -505,7 +526,7 @@ img{
 	justify-content: center;
 	align-items: center;
 	padding: .3rem;
-	background-color: var(--container-color-alt);
+	background-color: var(--text-color-alt);
 	border-radius: .4rem;
 	z-index: var(--z-tooltip);
 	transition: .4s;
@@ -514,7 +535,7 @@ img{
 
 .scrolltop__icon{
 	font-size: 1.2rem;
-	color: var(--text-color);
+	color: var(--title-color);
 }
 
 .show-scroll{
