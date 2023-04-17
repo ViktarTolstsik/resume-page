@@ -220,21 +220,6 @@ img{
 	align-items: center;
 }
 
-@media screen and (max-width: 968px) {
-	.nav__menu{
-		position: fixed;
-		bottom: -100%;
-		left: 0;
-		width: 100%;
-		padding: 2rem 1.5rem;
-		background-color: var(--body-color);
-		box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-		border-radius: 1rem 1rem 0 0;
-		z-index: var(--z-fixed);
-		transition: .3s;
-	}
-}
-
 .nav__logo, .nav__toggle{
 	color: var(--title-color);
 	font-weight: var(--font-medium);
@@ -527,7 +512,7 @@ img{
 	justify-content: center;
 	align-items: center;
 	padding: .3rem;
-	background-color: var(--text-color-alt);
+	background-color: var(--text-color-light);
 	border-radius: .4rem;
 	z-index: var(--z-tooltip);
 	transition: .4s;
@@ -536,7 +521,7 @@ img{
 
 .scrolltop__icon{
 	font-size: 1.2rem;
-	color: var(--title-color);
+	color: var(--text-color);
 }
 
 .show-scroll{
@@ -550,6 +535,36 @@ img{
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem .5rem;
 	}
+}
+
+@media screen and (max-width: 968px) {
+	.nav__menu {
+		position: fixed;
+		bottom: -100%;
+		left: 0;
+		width: 100%;
+		padding: 2rem 1.5rem;
+		background-color: var(--body-color);
+		box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+		border-radius: 1rem 1rem 0 0;
+		z-index: var(--z-fixed);
+		transition: .3s;
+	}
+
+	.home__profession__left, .home__information,
+	.social__link, .profile__description,
+	.education__studies, .skills__data {
+		color: var(--text-color-alt);
+	}
+
+	.generate-pdf{
+		color: var(--text-color-light);
+	}
+	
+	.generate-pdf:hover{
+		color: var(--text-color-light);
+	}
+
 }
 
 @media screen and (min-width: 968px){
