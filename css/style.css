@@ -438,7 +438,7 @@ img{
 	color: var(--text-color-alt);
 }
 
-.project__technologies{
+.project__technologies, .languages__proficiency{
 	color: var(--text-color-light);
 }
 
@@ -452,10 +452,12 @@ img{
 
 .skills__name, .languages__name{
 	display: flex;
-	align-items: center;
+	align-items:baseline;
 	margin-bottom: var(--mb-3);
 }
-
+.languages__name {
+	flex-direction: column;
+}
 .skills__circle, .languages__circle, .experience__circle{
 	display: inline-block;
 	width: 5px;
