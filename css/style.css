@@ -257,10 +257,6 @@ img{
 	margin-bottom: var(--mb-1);
 }
 
-.show-menu{
-	bottom: var(--header-height);
-}
-
 .active-link{
 	color: var(--title-color);
 }
@@ -320,8 +316,8 @@ img{
 
 .home__button-movil{
 	display: inline-block;
-	border: 2px solid var(--text-color);
-	color: var(--title-color);
+	border: 2px solid var(--text-color-light);
+	color: var(--text-color-light);
 	padding: 1rem 2rem;
 	border-radius: .25rem;
 	transition: .3s;
@@ -330,8 +326,8 @@ img{
 }
 
 .home__button-movil:hover {
-	background-color: var(--text-color);
-	color: var(--container-color);
+	background-color: var(--text-color-light);
+	color: var(--text-color);
 }
 
 .social__container{
@@ -551,6 +547,10 @@ img{
 		border-radius: 1rem 1rem 0 0;
 		z-index: var(--z-fixed);
 		transition: .3s;
+	}
+
+	.show-menu {
+		bottom: var(--header-height);
 	}
 
 	.home__profession__left, .home__information,
