@@ -436,6 +436,7 @@ img{
 
 .project__technologies, .languages__proficiency{
 	color: var(--text-color-light);
+	margin-top: .5rem;
 }
 
 .projects__link{
