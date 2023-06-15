@@ -62,23 +62,27 @@ body.scale-cv{
 .scale-cv .generate-pdf{
 	display: none;
 }
-
+.scale-cv .home {
+	margin-top: 1.5rem;
+}
 .scale-cv .container{
 	max-width: 595px;
 }
 
 .scale-cv .section{
-	padding: 1.5rem 0 .80rem;
+	padding: .5rem 0 .80rem;
 }
 
 .scale-cv .section-title{
-	margin-bottom: .75rem;
+	margin-bottom: .005rem;
 }
 
 .scale-cv .resume__left, .scale-cv .resume__right{
-	padding: 0 1rem;
+	padding: 1rem;
 }
-
+.scale-cv .resume__right {
+	margin-right: 1rem;
+}
 .resume__right {
 	margin-top: 2rem;
 }
@@ -143,9 +147,26 @@ body.scale-cv{
 .scale-cv .skills__name{
 	margin-bottom: var(--mb-1);
 }
+.scale-cv .project__description{
+	padding: .2rem 0;
+}
+
+.scale-cv .project__description,
+.scale-cv .experience__description,
+.scale-cv .certificate__description{
+	font-size: .7rem;
+}
+
+.scale-cv .certificate__title {
+	margin-bottom: .1rem;
+	font-weight: bold;
+}
 
 .scale-cv .interests__container{
 	column-gap: 2.5rem;
+}
+.scale-cv .interests__content {
+	margin-bottom: 0;
 }
 
 body{
@@ -195,7 +216,7 @@ img{
 	text-transform: uppercase;
 	letter-spacing: .35rem;
 	text-align: center;
-	margin-bottom: var(--mb-3);
+	margin-bottom: var(--mb-1);
 }
 
 .container{
@@ -307,7 +328,7 @@ img{
 }
 
 .home__address{
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .home__information{
@@ -398,6 +419,18 @@ img{
 	background-color: var(--text-color-light);
 }
 
+.experience__container,
+.certificate__container,
+.projects__container,
+.languages__container,
+.certificate__container,
+.interests__container
+{
+	background: aliceblue;
+	border-radius: 10px;
+	padding: .5rem;
+}
+
 .experience__line{
 	background-color: var(--container-color-alt);
 }
@@ -445,8 +478,11 @@ img{
 .project__technologies, .languages__proficiency{
 	color: var(--text-color-light);
 	margin-top: .5rem;
+	font-weight: bold;
 }
-
+.project__timespan{
+	font-weight: 100;
+}
 .projects__link{
 	color: var(--text-color-light);
 }
@@ -458,7 +494,7 @@ img{
 .skills__name, .languages__name{
 	display: flex;
 	align-items:baseline;
-	margin-bottom: var(--mb-3);
+	margin-bottom: var(--mb-1);
 }
 .languages__name {
 	flex-direction: column;
