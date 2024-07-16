@@ -3,8 +3,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/resume-page/css/style.css">
-<link rel="stylesheet" href="/resume-page/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
 <title>My Resume</title>
@@ -122,6 +122,9 @@
 							<li class="skills__name">
 								<span class="skills__circle"></span> SQL
 							</li>
+							<li class="skills__name">
+								<span class="skills__circle"></span> SQLite
+							</li>
 						</ul>
 
 						<ul class="skills__data">
@@ -135,10 +138,13 @@
 								<span class="skills__circle"></span> ASP .NET
 							</li>
 							<li class="skills__name">
-								<span class="skills__circle"></span> Firebase
+								<span class="skills__circle"></span> MS SQL Server
 							</li>
 							<li class="skills__name">
-								<span class="skills__circle"></span> MS SQL Server
+								<span class="skills__circle"></span> Git
+							</li>
+							<li class="skills__name">
+								<span class="skills__circle"></span> Firebase
 							</li>
 						</ul>
 					</div>
@@ -179,7 +185,7 @@
 					<h2 class="section-title"><i class="fa fa-portrait nav__icon"></i> About</h2>
 
 					<p class="profile__description">As an individual with two years of experience as a programming
-						tutor and a year as a database
+						tutor and two years as a database
 						administrator/engineer, I have developed a foundation in software development, database
 						management and work with legacy code in real-world applications.
 						Now I'm aiming to transit into a software engineering role, where I can apply my
@@ -204,22 +210,23 @@
 
 							<div class="experience__data grid">
 								<h3 class="experience__title">Database administrator/engineer</h3>
-								<span class="experience__company">07.2022 - Present | BIP - University of Law and
+								<span class="experience__company">07.2022 - 08.2024 | BIP - University of Law and
 									social-information technologies</span>
 								<p class="experience__description">Ensuring proper maintenance, security and operative
-									capabilities of the local databases.
+									capabilities of the local databases. Software development.
 									Managing journaling files. Consulting workers on tools and skills required to work
 									with databases. Mantaining, supporting
 									and updating University's website.
 								<ul class="experience__description">
+									<li><span class="experience__circle"></span>Developed software for
+										monitoring the training of facility's scientific workers, the
+										actual indicators of admission and graduation of graduate students and
+										applicants.
+									</li>
 									<li><span class="experience__circle"></span>Implemented numerous visual improvements
 										to the University's website;</li>
 									<li><span class="experience__circle"></span>Worked with legacy code, refactoring and
 										optimizing its usage;
-									</li>
-									<li><span class="experience__circle"></span>Have been developing software for
-										internal
-										utilization using C#, WPF, SQLite.
 									</li>
 								</ul>
 								</p>
@@ -251,29 +258,37 @@
 					<h2 class="section-title"><i class="fa fa-layer-group nav__icon"></i> Recent Projects</h2>
 					<div class="projects__container grid">
 						<div class="projects__content">
-							<h3 class="project__title">«Blogster» Web Blog Application</h3>
-							<p class="project__technologies">C#, ASP .NET Razor Pages, HTML, CSS, JavaScript, Entity
-								Framework, MS SQL
-								Server | <span class="project__timespan">March 2023 - May 2023</span></p>
+							<h3 class="project__title">«Science Qualification Monitoring System» Desktop Application
+							</h3>
+							<p class="project__technologies">C#, WPF, XAML, Entity Framework, SQLite | <span
+									class="project__timespan">2024</span></p>
 							<p class="project__description">Application, designed for creating and managing articles in
 								a blog. Users
 								can create, edit, delete and categorize blog posts using tags, as well as leave likes
 								and commentaries.
 								Post creation process is enriched by the usage of a WYSIWYG text editor that lets users
 								format their posts and add media.</p>
-							<a href="https://github.com/ViktarTolstsik/BlogApp" class="projects__link"><i
-									class="fa fa-github"></i> GitHub</a>
+						</div>
+						<div class="projects__content">
+							<h3 class="project__title">«Blogster» Web Blog Application</h3>
+							<p class="project__technologies">C#, ASP .NET Razor Pages, HTML, CSS, JavaScript, Entity
+								Framework, MS SQL
+								Server | <span class="project__timespan">2023</span></p>
+							<p class="project__description">Application, designed for creating and managing articles in
+								a blog. Users
+								can create, edit, delete and categorize blog posts using tags, as well as leave likes
+								and commentaries.
+								Post creation process is enriched by the usage of a WYSIWYG text editor that lets users
+								format their posts and add media.</p>
 						</div>
 						<div class="projects__content">
 							<h3 class="project__title">«NoteWorthy» Desktop Notes Application</h3>
 							<p class="project__technologies">C#, WPF, XAML, Firebase | <span
-									class="project__timespan">February 2023 - May 2023</span></p>
+									class="project__timespan">2023</span></p>
 							<p class="project__description">Application, designed for managing notes. Users can create,
 								edit, delete and gather
 								notes in a notebook. Notes creation is achieved via an inbuilt text editor, which
 								provides several formatting and content managing options.</p>
-							<a href="https://github.com/ViktarTolstsik/NotesApp" class="projects__link"><i
-									class="fa fa-github"></i> GitHub</a>
 						</div>
 				</section>
 				<section class="languages right-section" id="languages">
@@ -323,6 +338,12 @@
 									(C2 Proficient)</a> | 2023</p>
 						</div>
 						<div class="certificate__content">
+							<h3 class="certificate__title">FreeCodeCamp</h3>
+							<p class="certificate__description"><a
+									href="https://www.freecodecamp.org/certification/fcc71e9a250-98a0-4f4f-a6bb-36b7b12c5bcd/foundational-c-sharp-with-microsoft">Foundational
+									C# with Microsoft</a> | 2023</p>
+						</div>
+						<div class="certificate__content">
 							<h3 class="certificate__title">Udemy</h3>
 							<p class="certificate__description"><a
 									href="https://github.com/ViktarTolstsik/Certificates/blob/master/C%23%20and%20.NET%20Design%20Patterns%202023.pdf">C#
@@ -367,9 +388,9 @@
 		<i class="fa fa-arrow-alt-circle-up scrolltop__icon"></i>
 	</a>
 	<!--HTML TO PDF-->
-	<script src="/resume-page/js/html2pdf.bundle.min.js"></script>
+	<script src="/js/html2pdf.bundle.min.js"></script>
 	<!--MAIN JS-->
-	<script src="/resume-page/js/scripts.js"></script>
+	<script src="/js/scripts.js"></script>
 </body>
 
 </html>
